@@ -1,0 +1,100 @@
+$gris : #ECECEC;
+$bleu: #3F4EA4;
+
+body{
+  background-color: $gris;
+  margin: 0;
+}
+
+html{
+  margin: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 18px;
+}
+
+.navbar{
+  height: 6vh;
+  background-color: $bleu;
+  display: grid;
+  grid-template-columns: 5vw 1fr;
+  position: relative;
+}
+
+.conteneur{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vh;
+  padding-left: 0;
+  margin-top: 5vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+
+.buddy{
+  grid-column: span 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // border: solid 1px darkgrey;
+  box-shadow: 5px 5px 5px darkgrey;
+  border-radius: 10px;
+  background-color: white;
+  height: 18vh;
+}
+
+.buddyDetails{
+  display: grid;
+  grid-template-rows: 12vh 1fr;
+  background-color: $bleu;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.buddyPicture{
+  grid-column: span 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buddyName{
+  grid-row: 1/2;
+  margin: auto;
+  text-align: center;
+}
+
+.buddyAge{
+  grid-row: 2/3;
+  margin: auto;
+}
+
+.gg-menu{
+  color: white;
+  margin-left: 2vw;
+  grid-column: span 1;
+  position: absolute;
+  top: 50%;
+}
+
+.navbarTitle{
+  // display: inline;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.imgBuddy{
+  object-fit: contain;
+}
+
+.titre{
+  vertical-align: middle;
+  font-size: 25px;
+  font-weight: normal;
+}
