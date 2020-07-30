@@ -54,6 +54,7 @@ html {
   grid-column: span 1;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .buddyName {
@@ -91,6 +92,99 @@ html {
   vertical-align: middle;
   font-size: 25px;
   font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.listeNav {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 2vh;
+}
+
+.itemNav {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.conteneurNav {
+  margin: auto;
+}
+
+.listeNav li a {
+  display: block;
+  float: left;
+  width: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+footer {
+  height: 8vh;
+  margin-top: 4vh !important;
+  background-color: #3F4EA4;
+  color: white;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+footer a {
+  color: white;
+  font-size: 22px;
+}
+
+.pagination {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.listeNav {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 2vh;
+  list-style-type: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.listeNav li {
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left;
+  /*pour IE*/
+  width: 30px;
+  border: none;
+}
+
+.listeNav li a {
+  display: block;
+  float: left;
+  width: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  /*pour avoir un effet "outset" avec IE :*/
+}
+
+.conteneurPagination {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
